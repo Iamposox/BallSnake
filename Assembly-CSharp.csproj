@@ -64,11 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CubeRandomCreate.cs" />
+    <Compile Include="Assets\Scripts\GenerationCube.cs" />
     <Compile Include="Assets\Scripts\Model\Borders.cs" />
     <Compile Include="Assets\Scripts\Model\Cube.cs" />
     <Compile Include="Assets\Scripts\Model\Position.cs" />
-    <Compile Include="Assets\Scripts\SnakeMovement.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
