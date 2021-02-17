@@ -1,15 +1,14 @@
 ﻿using System;
 using UnityEngine;
 
+public delegate void CreateCubeDelegate();
 public class Cube : MonoBehaviour {
-    public event Action<GameObject, float, float, float> CreateCubeEvent;
-
-    [SerializeField] private GameObject newCube;
+    public event CreateCubeDelegate CreateCubeEvent;
 
     private void OnTriggerEnter(Collider player) {
         if (player.TryGetComponent(out Player gamer)) {
             Destroy(gameObject);
-            CreateCubeEvent?.Invoke(newCube, 8.8f, 0.65f, 8.8f);
+            CreateCubeEvent?.Invoke();
             gamer.UpdateScore(1);
         }
     }
